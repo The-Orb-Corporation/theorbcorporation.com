@@ -43,8 +43,8 @@ body,html {
 
 .wrapper{
 	overflow: hidden;
-	height: 500px;
-	width: 500px;
+	height: 400px;
+	width: 400px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -65,16 +65,16 @@ body,html {
 .loading{
 	color: #000;
 	background: linear-gradient(0deg, #959296, white, #68666a);
-	width: 40vh;
-	height: 40vh;
+	width: 30vh;
+	height: 30vh;
 	border-radius: 50%;
 	position: relative;
 	animation: rotate_animation 4s ease-in-out infinite alternate, pulse_animation 3s ease-out infinite;
 }
 
 .loading::after{
-	width: calc(40vh - 6px);
-	height: calc(40vh - 6px);
+	width: calc(30vh - 6px);
+	height: calc(30vh - 6px);
 	background-color: currentColor;
 	content: " ";
 	position: absolute;
