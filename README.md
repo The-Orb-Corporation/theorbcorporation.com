@@ -1,6 +1,17 @@
-# eleventy-base-blog v9
+# How to publish a post
 
-A starter repository showing how to build a blog with the [Eleventy](https://www.11ty.dev/) site generator (using the [v3.0 release](https://github.com/11ty/eleventy/releases/tag/v3.0.0)).
+1. Install git and npm
+2. Git clone this repo `git clone git@github.com:The-Orb-Corporation/theorbcorporation.com.git`
+3. `cd` into the repo
+4. Run `npm install`
+5. Run `npx @11ty/eleventy --serve`, that will serrve the site locally, you can view it at `http://localhost:8080`
+6. Add your post as a markdown file to `content/blog`, probably name the file after the date or something
+7. When it's ready, commit the file to master and push. (`git add .`, `git commit -m "your commit message here"`, `git push`)
+8. Run `npx @11ty/eleventy` which will generate the version of the site to publish to prod in the `_site` directory.
+9. Run `./deploy.sh`, which will copy the contents of `_site` to the `gh-pages` branch, commit them, and push. That branch is what actually ends up on the site.
+
+
+Stuff below this is general documentation about eleventy which you can read if you want. 
 
 ## Getting Started
 
