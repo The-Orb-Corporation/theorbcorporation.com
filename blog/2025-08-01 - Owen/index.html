@@ -293,6 +293,174 @@ header {
 }
 .post-metadata time {
 	margin-right: 1em;
+}
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
 }</style>
 
 	</head>
@@ -312,7 +480,7 @@ header {
 		<ul class="nav">
 			<li class="nav-item"><a href="/blog/">Home</a></li>
 			<li class="nav-item"><a href="/archive/">Archive</a></li>
-			<li class="nav-item"><a href="/about/" aria-current="page">About</a></li>
+			<li class="nav-item"><a href="/about/">About</a></li>
 			<li class="nav-item"><a href="/feed/feed.xml">Feed</a></li>
 		</ul>
 	</nav>
@@ -321,14 +489,27 @@ header {
 <main id="main">
 	<heading-anchors>
 		
-<h1 id="board">Board</h1>
-<p>Our Board of Directors is comprised of community and national leaders with expertise in a wide range of areas, including training, advocacy, education, finance, law, fund development, and business management. The Board meets monthly (and twice in person annually). It is responsible for taking care of the strategic and financial health of the organization on an ongoing basis. Board terms are two years for executive directors, and three years for other members. Officers are elected annually.</p>
 
+
+<h1></h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2025-08-01">01 August 2025</time></li>
+</ul>
+
+<h1 id="on-ducks-in-f-flat">On Ducks in F Flat</h1>
+On sundays I workshop an upcoming matrimony of 2 mallards. <br>
+A nuptial bond I may still unfulfill. <br>
+Christ posits no pragmatum that  can pilot birddom to bountiful joy.<br>
+the risk is walloping, <br>
+which in action wants fantastic study. <br>Contra our frights sit hopingly a bid at joy in wildfowl fusion. <br>If quarral disavails this duo, what authority wouldn't attack who in act did champion up knowingly highrisk position?<br> Succumb to migratory wim and doom a wonderful avian to sinful union? <br>Absurdist plans though may triumph, <br>for although I nix it out <br>in truthful notion it wouldn't plausibly hurt bad. <br>Duck matrimony -frankly- should fly to our God, <br>wobbling in climactic aclarity.
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/2025-07-30/"></a></li>
+</ul>
 
 	</heading-anchors>
 </main>
 
-		<!-- This page `/about/` was built on 2025-08-01T20:09:22.228Z -->
+		<!-- This page `/blog/2025-08-01 - Owen/` was built on 2025-08-01T20:09:22.229Z -->
 		<script type="module" src="/dist/xbxy_EL6cU.js"></script>
 	</body>
 </html>
