@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>September - R</title>
-		<meta name="description" content="something inspired by a book">
+		<title>September - O</title>
+		<meta name="description" content="make something inspired by a book">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="The Orb Corporation">
 		<meta name="generator" content="Eleventy v3.1.2">
 		
@@ -293,6 +293,174 @@ header {
 }
 .post-metadata time {
 	margin-right: 1em;
+}
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
 }</style>
 
 	</head>
@@ -321,20 +489,25 @@ header {
 <main id="main">
 	<heading-anchors>
 		
-<h2 id="finite-and-infinite-game-x-wall-e">Finite &amp; Infinite Game x WALL-E</h2>
-<p><img src="content/content/blog/IMG_FIGW_1.jpg" alt="Page 1 of Finite and Infinite Games zine"></p>
-<p><img src="content/content/blog/IMG_FIGW_2.jpg" alt="Page 2 of Finite and Infinite Games zine"></p>
-<p><img src="content/content/blog/IMG_FIGW_3.jpg" alt="Page 3 of Finite and Infinite Games zine"></p>
-<p><img src="content/content/blog/IMG_FIGW_4.jpg" alt="Page 4 of Finite and Infinite Games zine"></p>
-<p><img src="content/content/blog/IMG_FIGW_5.jpg" alt="Page 5 of Finite and Infinite Games zine"></p>
-<p><img src="content/content/blog/IMG_FIGW_6.jpg" alt="Page 6 of Finite and Infinite Games zine"></p>
-<p><img src="content/content/blog/IMG_FIGW_7.jpg" alt="Page 7 of Finite and Infinite Games zine"></p>
 
+
+<h1 id="september-o">September - O</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2025-11-01">01 November 2025</time></li>
+</ul>
+
+<p>As part of my post-move effort to leave the house and talk to people I recently read the book “The Lion Women of Tehran” by Marjan Kamali in preparation for a book club discussion at a local book store (which I have since learned is owned by and basically just a Barnes &amp; Noble). I thought the book was fine, and I don’t think the book club will be a long term join for me, but it did inspire me to make a new-to-me kind of sandwich.</p>
+<p>Food is a major through line  in the book, with one particularly compelling example being the “Salad-Olivier” sandwich which the main characters frequently get at bustling cafes in Tehran. I decided to fulfill my September prompt by making this sandwich for a couple reasons. First, I love a mayonnaise based sandwich and this one is basically a combination of egg, potato, and chicken so how could that be bad. Second, It also had a lot of frozen peas in it which is fun. Finally and most importantly, it seemed pretty easy.</p>
+<p>In order to up the difficulty level I also decided to make my own baguettes. A process which took a long time and at no point in the process did I believe it would actually work. In the end the baguettes turned out basically okay (far better than expected), but probably not really worth the effort. The salad itself was pretty nice, kinda exactly what you would expect based on the recipe. If I were to make it again I would probably back off on the potato a bit, especially in the sandwich context if felt very dense and heavy. I think my main takeaway from this experience was that you can put a bunch of peas into your egg or tuna salad.</p>
+
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/October - Owen/">October - O</a></li>
+</ul>
 
 	</heading-anchors>
 </main>
 
-		<!-- This page `/2025-10-16 R/` was built on 2025-11-01T14:34:23.630Z -->
+		<!-- This page `/blog/September- Owen/` was built on 2025-11-01T14:34:23.630Z -->
 		<script type="module" src="/dist/xbxy_EL6cU.js"></script>
 	</body>
 </html>
